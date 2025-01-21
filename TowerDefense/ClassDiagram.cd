@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Enemy">
+    <Position X="11.5" Y="16.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EoAAOgAKAAAEgABIgAAMZCAiADAYCwCLIgAAgAUUBAg=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyEasy">
+    <Position X="9.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUAAA=</HashCode>
+      <FileName>EnemyEasy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyMedium">
+    <Position X="9.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAUAAA=</HashCode>
+      <FileName>EnemyMedium.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="State">
+    <Position X="7" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIYBAABAAQAEAQACAACAAEAAAAAAQAAMAAABBBEUQAA=</HashCode>
+      <FileName>State.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuUI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameState">
+    <Position X="19.75" Y="8.5" Width="2.5" />
+    <AssociationLine Name="waveManager" Type="WaveManager" FixedFromPoint="true">
+      <Path>
+        <Point X="22.25" Y="9.938" />
+        <Point X="23" Y="9.938" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="player" Type="Player" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="14" />
+        <Point X="24.625" Y="14" />
+        <Point X="24.625" Y="15.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIwUAABAAAABAAAIAgAABAAAQgUQAADEAEEAAAWIIA=</HashCode>
+      <FileName>GameState.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="map" />
+      <Field Name="waveManager" />
+      <Field Name="gameplayUI" />
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="10.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAACAEAAAAAAAAAQAAAAQAAAAAAACAAUAAA=</HashCode>
+      <FileName>MainMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureManager">
+    <Position X="14.25" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABEAAAgAABAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TextureManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map">
+    <Position X="19.5" Y="15" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQABBIAAJIGAAAADAAIAAAAIFAAAAEIEAIAAAFUgAA=</HashCode>
+      <FileName>Map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game">
+    <Position X="10.25" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAwBABAAEAAACEACAAAAAAAiAEBAMQQQAAAQUAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="soundManager" />
+      <Field Name="textureManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyHard">
+    <Position X="9.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAUAAA=</HashCode>
+      <FileName>EnemyHard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundManager">
+    <Position X="14.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAIAAQAgAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SoundManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tower">
+    <Position X="4.25" Y="15.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAYAAIUAIEgxBqgBDIIBICAJAQEABBBABAAAEcBQA=</HashCode>
+      <FileName>Tower.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="activeProjectile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TowerHigh">
+    <Position X="7.5" Y="19.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAQAAABAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TowerHigh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerLow">
+    <Position X="7.5" Y="15.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQACABAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TowerLow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerMid">
+    <Position X="7.5" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAABAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TowerMid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile">
+    <Position X="1.25" Y="15.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAEIAAAAAAAKBAAABAAAQABAAQAIAAUIAA=</HashCode>
+      <FileName>Projectile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameOverState">
+    <Position X="5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIIAABAAAgFABBAAAAEgAAAIAAABQAABAAAABAAUIQA=</HashCode>
+      <FileName>GameOverState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighScoresState">
+    <Position X="1" Y="8.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>EAIIBAAAAAAABAAAAEAAAAAAAAAQQAQAAAAAAAg0AAA=</HashCode>
+      <FileName>HighScoreState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptionsState">
+    <Position X="7.75" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIICAAEIAAAAAAABAAgAAAAAAQwQAQAAAAAQAAUEAA=</HashCode>
+      <FileName>OptionsState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="23" Y="15.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAIAAAIQGACAAAAAACAIAAACQAAAAg=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveManager">
+    <Position X="23" Y="9.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAUAAAAAACAAAAAAAAIAgABABRAQIAUAUA=</HashCode>
+      <FileName>WaveManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameplayUI">
+    <Position X="15.75" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QIIrcUcAgSAUB4SCQBCAMARAACAJAMAJAAABAEHUAQE=</HashCode>
+      <FileName>GameplayUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuUI">
+    <Position X="2" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MenuUI::uiEffect">
+        <TypeIdentifier>
+          <NewMemberFileName>MenuUI.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAAAAAAQAAUIAAIAAAQAAAIACIAAAACAEURAA=</HashCode>
+      <FileName>MenuUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
